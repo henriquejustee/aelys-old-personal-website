@@ -7,6 +7,11 @@ import Curriculum from './components/Curriculum';
 import Setup from './components/Setup';
 import FutureGoals from './components/FutureGoals';
 
+// analtics
+
+import { inject } from '@vercel/analytics';
+inject();
+
 function App() {
   return (
     <Router>
