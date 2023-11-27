@@ -28,7 +28,7 @@ export default function Navbar() {
                          <span className=" text-white text-2xl font-bold ml-2">Aelys.me</span>
                     </div>
                         <div className="md:flex">  
-                            <div className="ml-10 flex relative flex-row md:flex-row items-baseline md:space-x-4 z-50">
+                            <div className="hidden md:flex ml-10 relative flex-row md:flex-row items-baseline md:space-x-4 z-50">
                                 <Link to="/" onClick={() => handleButtonClick('Home')} className={`px-3 z-50 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'Home' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>Home</Link>
                                 <Link to="/about" onClick={() => handleButtonClick('About')} className={`z-50 px-3 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'About' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>About</Link>
                                 <Link to="/contact" onClick={() => handleButtonClick('Contact')} className={`z-50 px-3 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'Contact' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>Contact</Link>
