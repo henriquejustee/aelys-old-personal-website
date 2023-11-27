@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <div className="flex justify-center items-center" style={{ minHeight: 'calc(100vh - 64px)' }}>
             <div className="bg-gray-200 p-8 rounded shadow">
-                <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
+                <h1 className="text-2xl font-bold mb-4">Contact me "developing..."</h1>
                 <form>
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
