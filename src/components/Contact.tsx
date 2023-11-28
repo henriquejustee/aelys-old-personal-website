@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <div className="animate-fade-in flex justify-center items-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
-     <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg backdrop-blur-md drop-shadow-md rounded px-8 mt-5 pb-8 mb-4">
+     <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg  drop-shadow-md rounded px-8 mt-5 pb-8 mb-4">
         <h1 className='text-center text-white font-bold text-2xl p-5'>Send me an email</h1>
         <div className="mb-4">
           <label className="block text-white text-sm font-bold mb-2">
