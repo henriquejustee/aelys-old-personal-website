@@ -7,13 +7,15 @@ export default function Contact() {
   const sendEmail = (e : React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_t0clse1', 'template_rp5cbok', form.current, 'JLs4RrXEyrEoigmxp')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-}
+    if (form.current) {
+      emailjs.sendForm('service_t0clse1', 'template_rp5cbok', form.current, 'JLs4RrXEyrEoigmxp')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
+  }
 
   return (
     <div className="animate-fade-in flex justify-center items-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
