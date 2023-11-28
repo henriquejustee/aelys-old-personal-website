@@ -1,7 +1,4 @@
-
-import React from 'react';
-
-const Setup: React.FC = () => {
+export default function Setup() {
   return (
     <div className="bg-gray-200">
       <h1 className="text-2xl font-bold text-center">My PC Setup</h1>
@@ -20,6 +17,4 @@ const Setup: React.FC = () => {
       </ul>
     </div>
   );
-};
-
-export default Setup;
+}

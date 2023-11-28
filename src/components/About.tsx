@@ -3,7 +3,7 @@ import { FaCat } from "react-icons/fa";
 
 export default function AboutMe() {
   return (
-    <div className="flex justify-center font-ubuntu animate-fade-in bg-gray-100 py-8 bg-cover bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
+    <div className="flex justify-center font-ubuntu animate-fade-in bg-gray-100 py-8 bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-full">
@@ -14,7 +14,7 @@ export default function AboutMe() {
               <h1 className="text-white text-3xl uppercase"><FaCat />Aelys</h1>
               <p className="text-white font-semibold mb-5">Backend Developer</p>
               <p className="text-white">I'm a programming and information technology student with two years of experience
-in frontend and backend projects. At the age of 16, I turned programming into both a
+                  in frontend and backend projects. At the age of 16, I turned programming into both a
 hobby and a regular part of my routine, discovering my preference for backend
 development as it allows me to better filter and focus my efforts.
 I'm constantly seeking challenges to expand my technical knowledge, exploring new

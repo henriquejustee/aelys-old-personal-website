@@ -1,12 +1,13 @@
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaHeart} from 'react-icons/fa';
+
 
 
 export default function Home() {
     return (
-        <div className="animate-fade-in font-ubuntu flex flex-col items-center pt-20 relative justify-start bg-cover bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)'}}>
+        <div className="animate-fade-in font-ubuntu flex flex-col items-center pt-20 relative justify-start bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)'}}>
             <div className="hover:scale-105 duration-300 hover:backdrop-blur-md backdrop-blur-sm drop-shadow-md p-7 rounded-lg shadow-lg max-w-xl md:max-w-3xl lg:max-w-3xl">
-                <img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-full backdrop-blur-sm border-solid border-2 border-purple-500 w-32 h-32 mx-auto m-3 drop-shadow-xl" src="pfp2.png" alt="Profile picture" />
-                <h1 className="text-white text-4xl font-bold mb-4 text-center">Welcome to my website :3</h1>
+                <img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-full backdrop-blur-sm border-solid border-2 border-purple-500 w-32 h-32 mx-auto m-3 drop-shadow-xl" src="pfp2.png" alt="Profile picture" />  
+                <h1 className="text-white text-4xl font-bold mb-4 text-center">Welcome to my website <span className='inline-block  text-red-600 align-middle'><FaHeart /></span></h1>
                 <p className="text-white">This website was made with <span className="font-extrabold"><a href="https://www.typescriptlang.org/">Typescript</a></span>, <span><a className="font-extrabold" href='https://react.dev/'>React</a></span> and <span><a className="font-extrabold" href='https://tailwindcss.com/'>TailwindCSS</a></span>, Here you can check my socials, stack, projects, curriculum and etc!</p>
             </div>
     
