@@ -3,13 +3,13 @@ import { FaCat } from "react-icons/fa";
 
 export default function AboutMe() {
   return (
-    <div className="flex justify-center animate-fade-in bg-gray-100 py-8 bg-cover bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
+    <div className="flex justify-center font-ubuntu animate-fade-in bg-gray-100 py-8 bg-cover bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-full">
-            <img className="opacity-80 md:ml-24 hover:opacity-100 hover:transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 " src="pfp2.png" height={300} width={500} alt="aelys_char" />
+            <img className="opacity-80 md:ml-auto sm:hover:opacity-100 sm:hover:transition ease-in-out delay-150 sm:hover:-translate-y-1 sm:hover:scale-110 duration-300 " src="pfp2.png" height={300} width={500} alt="aelys_char" />
           </div>
-          <div className="flex bg-gradient-to-r from-slate-800 to-transparent p-10  rounded opacity-90">
+          <div className="mr-auto flex bg-gradient-to-r from-slate-800 to-transparent p-10  rounded opacity-90">
             <div className="">
               <h1 className="text-white text-3xl uppercase"><FaCat />Aelys</h1>
               <p className="text-white font-semibold mb-5">Backend Developer</p>

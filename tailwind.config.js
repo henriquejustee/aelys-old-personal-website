@@ -10,6 +10,10 @@ export default {
         'height': 'height',
         'spacing': 'margin, padding',
       }
+      ,
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif']
+      },
     }
   },
   plugins: [],
