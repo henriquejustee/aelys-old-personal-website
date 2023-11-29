@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { FaDiscord, FaWhatsapp } from "react-icons/fa6";
+
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -25,7 +27,7 @@ export default function Contact() {
   return (
     <>
     <div className="animate-fade-in pl-5 flex justify-start items-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
-      
+    <div className="grid grid-cols-2 gap-4 w-full rounded px-8 mt-5 mb-8">
       <form ref={form} onSubmit={sendEmail} className="bg-gradient-to-r from-slate-800 to-transparent w-full max-w-lg  rounded px-8 mt-5 pb-8 mb-4">
         <h1 className='text-center text-white font-bold text-2xl p-5'>Send me an email</h1>
         <div className="mb-4">
@@ -60,8 +62,16 @@ export default function Contact() {
             <strong className="font-bold">Message sent!</strong> </div>}
         </div>
       </form>
+      <div className='mr-10 mb-5 mt-5 w-full h-1/2 bg-gradient-to-r from-transparent to-slate-800 rounded-md'>
+        <h1 className='text-center text-white text-2xl pt-5 font-bold'>My social medias</h1>
+        <div>
+          <span className='inline-block pl-10 pt-5 text-white'><FaDiscord className="text-2xl md:text-3xl lg:text-4xl inline-block text-center hover:text-slate-400 duration-300 text-white" /> lowgradeprogramming</span>
+          <span className='inline-block pl-10 pt-5 text-white'><FaWhatsapp className="text-2xl md:text-3xl lg:text-4xl inline-block text-center hover:text-slate-400 duration-300 text-white" /> +55 19 98977-0025</span>
+        </div>
+      </div>
     </div>
     <div>
+      </div>
     </div>
     </>
    
