@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaHeart} from 'react-icon
 
 export default function Home() {
     return (
-        <div className="animate-fade-in font-ubuntu flex flex-col items-center  relative justify-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)'}}>
+        <div className="animate-fade-in font-ubuntu flex flex-col items-center relative pb-16 justify-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)'}}>
             <div className="hover:scale-105 duration-300  p-7 rounded-lg max-w-xl md:max-w-3xl lg:max-w-3xl">
                 <img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-full border-solid border-2 border-purple-500 w-32 h-32 mx-auto m-3 drop-shadow-xl" src="pfp2.png" alt="Profile picture" />  
                 <h1 className="text-white text-4xl font-bold mb-4 text-center">Welcome to my website <span className='inline-block  text-red-600 align-middle'><FaHeart /></span></h1>

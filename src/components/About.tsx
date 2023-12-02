@@ -7,7 +7,7 @@ export default function AboutMe() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-full">
-            <img className="opacity-80 md:ml-auto sm:justify-end sm:hover:opacity-100 mr-24 sm:hover:transition ease-in-out delay-150 sm:hover:-translate-y-1 sm:hover:scale-110 duration-300 " src="pfp2.png" height={400} width={600} alt="aelys_char" />
+            <img className="opacity-80 md:ml-auto sm:justify-end sm:hover:opacity-100 mr-24 sm:hover:transition ease-in-out delay-150 sm:hover:-translate-y-1 sm:hover:scale-105 duration-300 " src="pfp2.png" height={400} width={600} alt="aelys_char" />
           </div>
           <div className="mr-auto flex bg-gradient-to-r from-slate-800 to-transparent p-10  rounded opacity-90">
             <div className="">
