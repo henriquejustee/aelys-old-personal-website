@@ -67,7 +67,7 @@ export default function Contact() {
         { /*Contact info div*/ }
 
       </form>
-      <div className='mr-10 mb-5 mt-5 w-auto h-72 bg-gradient-to-r from-transparent to-slate-800 rounded-md'>
+      <div className='mr-10 mb-5 mt-5 w-auto h-60 bg-gradient-to-r from-transparent to-slate-800 rounded-md'>
         <h1 className='text-center text-white text-2xl pt-5 font-bold uppercase text-opacity-75'>How to contact me</h1>
         <div>
         <p className='text-white mt-5 mr-10 ml-10'>If you want to get in touch with me, feel free to check my email below, I also have my number or Discord if you prefer.
