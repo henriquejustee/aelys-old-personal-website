@@ -1,7 +1,6 @@
 import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaHeart} from 'react-icons/fa';
 
 
-
 export default function Home() {
     return (
         <div className="animate-fade-in font-ubuntu flex flex-col items-center relative pb-16 justify-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)'}}>

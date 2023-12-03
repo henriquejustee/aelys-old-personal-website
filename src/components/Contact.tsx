@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { FaDiscord, FaWhatsapp } from "react-icons/fa6";
+import { FaDiscord, FaWhatsapp, FaTelegram } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 
 export default function Contact() {
@@ -27,9 +28,9 @@ export default function Contact() {
   return (
     <>
     <div className="animate-fade-in pl-5 flex justify-start items-center bg-cover bg-fixed bg-[url('../mountain_sunset.jpg')]" style={{ minHeight: 'calc(100vh - 64px)' }}>
-    <div className="grid grid-cols-2 gap-4 w-full rounded px-8 mt-5 mb-8">
-      <form ref={form} onSubmit={sendEmail} className="bg-gradient-to-r from-slate-800 to-transparent w-full max-w-lg  rounded px-8 mt-5 pb-8 mb-4">
-        <h1 className='text-center text-white font-bold text-2xl p-5'>Send me an email</h1>
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 w-full rounded px-8 mt-5 mb-8">
+      <form ref={form} onSubmit={sendEmail} className="bg-gradient-to-r from-slate-800 to-transparent w-full max-w-lg rounded px-8 mt-5 pb-8 mb-4">
+        <h1 className='text-center text-white font-bold text-2xl p-5 uppercase text-opacity-75'>Send me an email</h1>
         <div className="mb-4">
           <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
             Destinatary Email
@@ -61,13 +62,33 @@ export default function Contact() {
           {showDiv && <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert"> 
             <strong className="font-bold">Message sent!</strong> </div>}
         </div>
+
+        
+        { /*Contact info div*/ }
+
       </form>
-      <div className='mr-10 mb-5 mt-5 w-full h-1/2 bg-gradient-to-r from-transparent to-slate-800 rounded-md'>
-        <h1 className='text-center text-white text-2xl pt-5 font-bold'>My social medias</h1>
+      <div className='mr-10 mb-5 mt-5 w-auto h-72 bg-gradient-to-r from-transparent to-slate-800 rounded-md'>
+        <h1 className='text-center text-white text-2xl pt-5 font-bold uppercase text-opacity-75'>How to contact me</h1>
         <div>
-          <span className='inline-block pl-10 pt-5 text-white'><FaDiscord className="text-2xl md:text-3xl lg:text-4xl inline-block text-center hover:text-slate-400 duration-300 text-white" /> lowgradeprogramming</span>
-          <span className='inline-block pl-10 pt-5 text-white'><FaWhatsapp className="text-2xl md:text-3xl lg:text-4xl inline-block text-center hover:text-slate-400 duration-300 text-white" /> +55 19 98977-0025</span>
+        <p className='text-white mt-5 mr-10 ml-10'>If you want to get in touch with me, feel free to check my email below, I also have my number or Discord if you prefer.
+I tend to respond quickly.</p>
         </div>
+        <div className="flex justify-center items-center mt-5">
+                    <a onClick={() => {navigator.clipboard.writeText("lowgradeprogramming")}} target="_blank" rel="noopener noreferrer" className="cursor-pointer transition ease-in-out delay-150 hover:scale-150 hover:text-indigo-500 duration-300 text-white text-4xl mx-2 ">
+                      <FaDiscord />
+                    </a>
+                    <a onClick={() => {navigator.clipboard.writeText("+55 19 98977-0025")}} target="_blank" rel="noopener noreferrer" className="cursor-pointer transition ease-in-out delay-150 hover:scale-150 hover:text-green-500 duration-300 text-white text-4xl mx-2">
+                      <FaWhatsapp />
+                    </a>
+                    <a onClick={() => {navigator.clipboard.writeText("aelysch@proton.me")}} target="_blank" rel="noopener noreferrer" className="cursor-pointer transition ease-in-out delay-150 hover:scale-150 hover:text-white duration-300 text-white text-4xl mx-2">
+                      <MdEmail />
+                    </a>
+                    <a onClick={() => {navigator.clipboard.writeText("+55 19 98977-0025")}} target="_blank" rel="noopener noreferrer" className="cursor-pointer transition ease-in-out delay-150 hover:scale-150 hover:text-indigo-500 duration-300 text-white text-4xl mx-2">
+                      <FaTelegram />
+                    </a>
+                    
+                  </div>
+                  <p className='text-center pt-4 text-white text-sm text-opacity-70'>Click to copy</p>
       </div>
     </div>
     <div>

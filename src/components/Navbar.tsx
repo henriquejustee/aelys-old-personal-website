@@ -16,7 +16,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-slate-800 ">
+        <nav className="bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
@@ -46,13 +46,12 @@ export default function Navbar() {
   <RxHamburgerMenu className="inline-block text-2xl hover:transition duration-1000 hover:skew-y-12"/>
 </button>
 {isDropdownOpen && (
-  <div className="absolute right-0 mt-2 w-48 z-50 bg-white rounded-md shadow-lg font-ubuntu">
-    <Link to="/" onClick={() => handleButtonClick('Home')} className={`block md:hidden px-4 py-2 text-sm text-gray-700 rounded-xl hover:rounded-xl ${selectedButton === 'Home' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>Home</Link>
-    <Link to="/about" onClick={() => handleButtonClick('About')} className={`block md:hidden px-4 py-2 text-sm text-gray-700 ${selectedButton === 'About' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>About</Link>
-    <Link to="/contact" onClick={() => handleButtonClick('Contact')} className={`block md:hidden px-4 py-2 text-sm text-gray-700 ${selectedButton === 'Contact' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>Contact</Link>
-    <Link to="/curriculum" onClick={() => handleButtonClick('Curriculum')} className={`block px-4 py-2 text-sm text-gray-700 rounded-xl hover:rounded-xl ${selectedButton === 'Curriculum' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>Curriculum</Link>
-    <Link to="/setup" onClick={() => handleButtonClick('Setup')} className={`block px-4 py-2 text-sm text-gray-700 ${selectedButton === 'Setup' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>Setup</Link>
-    <Link to="future-goals" onClick={() => handleButtonClick('FutureGoals')} className={`block px-4 py-2 text-sm text-gray-700 rounded-xl hover:rounded-xl ${selectedButton === 'FutureGoals' ? 'bg-gray-100' : 'hover:bg-gray-100'}`}>Future goals</Link>
+  <div className="absolute right-0 mt-2 w-48 z-50 bg-blue-950 rounded-md shadow-lg font-ubuntu">
+    <Link to="/" onClick={() => handleButtonClick('Home')} className={`block md:hidden px-4 py-2 text-sm text-white rounded-md hover:rounded-md ${selectedButton === 'Home' ? 'bg-blue-800' : 'hover:bg-blue-700 hover:rounded-md'}`}>Home</Link>
+    <Link to="/about" onClick={() => handleButtonClick('About')} className={`block md:hidden px-4 py-2 text-sm text-white ${selectedButton === 'About' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>About</Link>
+    <Link to="/contact" onClick={() => handleButtonClick('Contact')} className={`block md:hidden px-4 py-2 text-sm text-white ${selectedButton === 'Contact' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Contact</Link>
+    <Link to="/curriculum" onClick={() => handleButtonClick('Curriculum')} className={`block px-4 py-2 text-sm text-white hover:rounded-none rounded-md ${selectedButton === 'Curriculum' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Curriculum</Link>
+    <Link to="/setup" onClick={() => handleButtonClick('Setup')} className={`block px-4 py-2 text-sm text-white rounded-md hover:rounded-md ${selectedButton === 'Setup' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Setup</Link>
   </div>
 )}
                         </div>
