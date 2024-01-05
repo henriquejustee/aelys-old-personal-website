@@ -51,7 +51,7 @@ export default function Navbar() {
     <Link to="/about" onClick={() => handleButtonClick('About')} className={`block md:hidden px-4 py-2 text-sm text-white rounded-md ${selectedButton === 'About' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>About</Link>
     <Link to="/contact" onClick={() => handleButtonClick('Contact')} className={`block md:hidden px-4 py-2 text-sm text-white rounded-md ${selectedButton === 'Contact' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Contact</Link>
     <Link to="/curriculum" onClick={() => handleButtonClick('Curriculum')} className={`block px-4 py-2 text-sm text-white rounded-md ${selectedButton === 'Curriculum' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Curriculum</Link>
-    <Link to="/setup" onClick={() => handleButtonClick('Setup')} className={`block px-4 py-2 text-sm text-white rounded-md ${selectedButton === 'Setup' ? 'bg-blue-800' : 'hover:bg-blue-700'}`}>Setup</Link>
+   
   </div>
 )}
                         </div>
