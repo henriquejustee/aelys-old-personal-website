@@ -34,7 +34,7 @@ occasions.</p>
     <h2 className="pl-5 text-2xl font-bold mb-4 mt-5 text-white">Education</h2>
     <div className="mb-4">
     <h3 className="text-xl font-bold text-white">Technical course of software development at SENAC-SP</h3>
-    <p className="text-white">At this course, i get the cientific concepts of programming and software development in general. It propose me a knowledge to start building my own projects </p>
+    <p className="text-white">This course is designed to provide you with a solid foundation in the scientific concepts of programming and software development in general. You will learn how to build your own projects and gain the knowledge necessary to continue developing your skills in this field.</p>
  </div> 
   </div>
 </div>
