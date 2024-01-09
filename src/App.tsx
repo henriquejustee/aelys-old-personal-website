@@ -4,7 +4,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Curriculum from './components/Curriculum';
-import Setup from './components/Setup';
 import Footer from './components/Footer';
 
 // analtics
@@ -22,7 +21,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/curriculum" element={<Curriculum />} />
-          <Route path="/setup" element={<Setup />} />
         </Routes>
         <Footer/>
       </div>
