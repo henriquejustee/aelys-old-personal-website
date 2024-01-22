@@ -2,10 +2,19 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { VscCode } from "react-icons/vsc";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
 
 export default function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [selectedButton, setSelectedButton] = useState('Home');
+
+    const buttons = [
+       <Link to="/" ><Button key="one"  >Home</Button></Link> ,
+        <Link to="About" ><Button key="two">About</Button></Link>,
+        <Link to="contact"><Button key="three">Contact</Button></Link>,
+      ];
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
@@ -16,23 +25,26 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-gray-900">
+        <nav className="bg-gradient-to-r from-gray-700 via-gray-900 to-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                     
                     <div className="flex-shrink-0 flex items-center">
-                        <span className="text-purple-500 text-3xl animate-pulse">
-                    <VscCode />
+                        <span className="text-center pt-1 text-purple-500 text-4xl animate-pulse">
+                    <VscCode  />
                         </span>
-                         <span className=" text-white text-2xl font-bold ml-2 hover:text-slate-200">Aelys.me</span>
+                         <span className=" text-white text-center text-2xl font-bold ml-2">Aelys.me</span>
                     </div>
                         <div className="md:flex">  
                             <div className="font-ubuntu hidden md:flex ml-10 relative flex-row md:flex-row items-baseline md:space-x-4 z-50">
-                                <Link to="/" onClick={() => handleButtonClick('Home')} className={`px-3 z-50 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'Home' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>Home</Link>
-                                <Link to="/about" onClick={() => handleButtonClick('About')} className={`z-50 px-3 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'About' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>About</Link>
-                                <Link to="/contact" onClick={() => handleButtonClick('Contact')} className={`z-50 px-3 py-2 rounded-md text-sm transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ${selectedButton === 'Contact' ? 'bg-purple-500 text-white' : 'text-gray-300  hover:text-white'}`}>Contact</Link>
+
+                                <ButtonGroup color="primary" aria-label="medium secondary button group">
+                                     {buttons}
+                                </ButtonGroup>   
+
                             </div>
+            
                         </div>
                     </div>
                     <div className="flex">
